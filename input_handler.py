@@ -1,6 +1,15 @@
+from typing import List
+
+
 def user_input():
-    password = input("Please input your password: ")
-    return password
+    pass_list = []
+    password = input("Please input your password(s): ")
+
+    while password:
+        pass_list.append(password)
+        password = input()
+
+    return pass_list
 
 
 def file_input():
